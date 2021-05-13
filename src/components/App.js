@@ -5,9 +5,9 @@ class App extends Component {
     constructor(){
         super();
         this.relativelist = [
-            {name: 'Relative1', id = 1},
-            {name: 'Relative2', id = 2},
-            {name: 'Relative3', id = 3} 
+            {name: 'Relative1', id : 1},
+            {name: 'Relative2', id : 2},
+            {name: 'Relative3', id : 3} 
         ]
     }
     render() {
@@ -17,7 +17,7 @@ class App extends Component {
                 <ol key="relativeList">
                     {
                     this.relativelist.map((data, i) => {
-                        return <li key={`relativeListItem${i}`}>{data.name}</li>;
+                        return <li key={`relativeListItem${data.id}`}>{data.name}</li>;
                     })
                     }
                 </ol>
