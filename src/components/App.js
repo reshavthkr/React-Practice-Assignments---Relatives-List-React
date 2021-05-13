@@ -17,7 +17,7 @@ class App extends Component {
                 <ol key="relativeList">
                     {
                     this.relativelist.map((data, i) => {
-                        return <li key={`relativeListItem${data.id}`}>{data.name}</li>;
+                        return <li key={`relativeListItem${i}`}>{data.name}</li>;
                     })
                     }
                 </ol>
